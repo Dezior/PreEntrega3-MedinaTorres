@@ -1,0 +1,8 @@
+@mixin desktop{
+    @media screen and (min-width: 992px) {
+        @content
+    }
+}
+@mixin mobile{
+    
+}
