@@ -23,6 +23,10 @@
   align-items: center;
   justify-content: space-between;
 }
+#layout header .logo a {
+  text-decoration: none;
+  color: white;
+}
 #layout header .logo h1 {
   padding: 8px 12px;
 }
@@ -155,6 +159,7 @@
   flex-direction: row;
   justify-content: center;
   align-items: center;
+  margin-top: 24px;
 }
 #layout main .contenido .contacto a {
   text-decoration: none;
@@ -208,19 +213,24 @@
 #layout main .contenido .info-soporte .card-soporte {
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
   justify-content: center;
 }
 @media screen and (min-width: 992px) {
   #layout main .contenido .info-soporte .card-soporte {
     flex-direction: row;
     justify-content: space-between;
+    align-items: start;
   }
 }
 #layout main .contenido .info-soporte .card-soporte .card-icon {
   padding: 8px;
   text-align: center;
-  width: 400px;
+}
+@media screen and (min-width: 992px) {
+  #layout main .contenido .info-soporte .card-soporte .card-icon {
+    width: 33.33%;
+  }
 }
 #layout main .contenido .info-soporte .card-soporte .card-icon i {
   font-size: 48px;
@@ -265,6 +275,9 @@
   text-align: center;
   background-color: rgb(48, 48, 48);
   border-radius: 16px;
+}
+#layout main .contenido .info-compra .info-carrito .carrito-pg .ico-carrito {
+  fill: #ffffff;
 }
 #layout main .contenido .info-compra .res-compra {
   display: flex;
@@ -316,9 +329,56 @@
   align-items: center;
   padding: 16px;
 }
-#layout footer a {
+@media screen and (min-width: 992px) {
+  #layout footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+#layout footer .redes {
+  display: flex;
+  align-items: center;
+  margin: 8px;
+}
+#layout footer .redes a {
+  padding: 0 8px;
+}
+#layout footer .redes a svg {
+  text-decoration: none;
+  fill: rgb(241, 65, 11);
+}
+#layout footer .contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 8px;
+}
+#layout footer .contact a {
   text-decoration: none;
   color: rgb(241, 65, 11);
+}
+@media screen and (min-width: 992px) {
+  #layout footer .contact {
+    align-items: flex-start;
+  }
+}
+
+.btn-destacado {
+  background-color: rgb(241, 65, 11);
+  border: none;
+  display: flex;
+  align-items: start;
+  width: fit-content;
+  text-align: center;
+}
+.btn-destacado:hover {
+  background-color: rgb(141, 35, 3);
+}
+@media screen and (min-width: 992px) {
+  .btn-destacado {
+    width: fit-content;
+  }
 }
 
 .btn-primario {
